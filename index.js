@@ -8,7 +8,7 @@ function tempAlert(msg,duration)
     el.innerHTML = msg;
     setTimeout(
         function(){
-            el.style.opacity = '1';
+            el.style.opacity = '0.8';
         },
         100
     );
