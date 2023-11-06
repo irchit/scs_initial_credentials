@@ -32,29 +32,31 @@
         </p>
         <span>
             Tip: You can change the password in the linux<br/>terminal using the 'passwd' command.<br/>It is recomanded to do it, so you don't need<br/>to search for the scs password every time.
-        </span>
+        </spam>
     </div>
     <br/>
     <div id="log_in" class="log_in">
         <h3>
             Get Credentials
         </h3>
-        <button class="login_button">
+        <button onclick="connectToMicrosoft()" class="login_button">
             Here
         </button>
     </div>
-<!--
-    <br />
-    <div id="logged_in" class="log_in">
-        <h3>NAME LASTNAME</h3>
-        <button class="login_button">Log out</button>
-        <p>Your credentials are:</p>
-        <p>username: username</p>
-        <div>
-            <p>password: ********</p><button class="login_button">show</button><button class="login_button">copy</button>
+    <br/>
+    <div id="logged_in" class="log_in" style="display: none;">
+        <h3 id="name">RĂZVAN CHIȚEA</h3>
+        <button onclick="disconnectFromMicrosoft()" class="credencials_button">Log out</button>
+        <h3>Your credentials are:</h3>
+        <div class="data_div">
+            <p>username:&nbsp;</p><p id="username">crir3305</p>
         </div>
+        <button onclick="copyToClickboard('username')" class="credencials_button">copy</button>
+        <div class="data_div">
+            <p>password:&nbsp;</p><p id="password">here_is_the_password</p>
+        </div>
+        <button onclick="copyToClickboard('password')" class="credencials_button">copy</button>
     </div>
--->
     <br/>
     <br/>
     <br/>
@@ -63,10 +65,11 @@
             <p>MADE BY <a href="https://github.com/irchit">IRCHIT_DEV</a></p>
             <p>WITH HELP BY ALEXANDRU KIRALY</p>
         </div>
-        <div class="footer1">
+        <div class="footer2">
             <p><a href="https://www.cs.ubbcluj.ro/">CS.UBBCLUJ.RO</a></p>
             <p><a href="https://www.scs.ubbcluj.ro/landing/">SCS.UBBCLUJ.RO</a></p>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

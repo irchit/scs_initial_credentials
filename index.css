@@ -128,6 +128,7 @@ body{
     border-radius: 10px;
     padding: 4vh;
     width: 50vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .log_in p{
@@ -179,4 +180,37 @@ body{
 
 .footer a:hover{
     color:#487598
+}
+
+.footer2{
+    text-align: right;
+}
+
+.data_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.credencials_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    border-radius: 5px;
+    color: #d3ecff;
+    background-color: #001F36;
+    font-size: 1.5vh;
+    margin: 0.2vh;
+    font-family: "MuseoModerno", sans-serif;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.credencials_button:hover{
+    color: #d3ecff;
+    border-radius: 15px;
+    background-color: #193348;
+    font-size: 1.5vh;
 }
