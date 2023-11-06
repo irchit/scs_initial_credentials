@@ -1,4 +1,4 @@
-function tempAlert(msg,duration)
+function tempAlert( msg , duration )
 {
     var el = document.createElement("div");
     el.setAttribute(
