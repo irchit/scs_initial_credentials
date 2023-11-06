@@ -89,6 +89,7 @@ body{
     border-radius: 10px;
     padding: 4vh;
     width: 50vw;
+    transition: all 0.3s ease-in-out;
 }
 
 .howto h1{
