@@ -14,6 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="./assets/logo.png">
     <title>SCS | Credentials</title>
 </head>
 <body>
@@ -85,7 +86,7 @@
     <br/>
     <div id="footer" class="footer">
         <div class="footer1">
-            <p>MADE BY <a href="https://github.com/irchit">IRCHIT_DEV</a></p>
+            <p>MADE BY &nbsp;<a href="https://github.com/irchit">irchit_Dev</a>&nbsp; (CHIȚEA RĂZVAN)</p>
             <p>WITH HELP BY ALEXANDRU KIRALY</p>
         </div>
         <div class="footer2">

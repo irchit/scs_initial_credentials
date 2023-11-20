@@ -2,10 +2,12 @@ function tempAlert( msg , duration )
 {
     var el = document.createElement("div");
     el.setAttribute(
-        "style",
-        "opacity: 0;transition: all 0.3s ease-in-out;font-family: 'Consolas', sans-serif; font-size: 1.6vh; position:fixed;bottom: 5%; right: 2%;background-color:#4C4E52;color: white; width: 20%; border: solid 2px black;border-radius: 10px;text-align: center; padding: 10px;"
+        "class",
+        "copy_box"
     );
     el.innerHTML = msg;
+    el.style.opacity = '0'
+    document.body.appendChild(el);
     setTimeout(
         function(){
             el.style.opacity = '0.8';
@@ -18,7 +20,6 @@ function tempAlert( msg , duration )
         },
         duration
     );
-    document.body.appendChild(el);
 }
 
 function copyToClickboard( id_text ){

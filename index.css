@@ -225,3 +225,17 @@ body{
 .password{
     flex-direction: column !important;
 }
+
+.copy_box{
+    transition: all 0.3s ease-in-out;
+    font-family: 'Consolas', sans-serif; 
+    font-size: 1.6vh; 
+    position:fixed;
+    bottom: 5%; 
+    right: 2%;
+    background-color:#4C4E52;
+    color: white;
+    width: 20%; 
+    border-radius: 15px;
+    text-align: center; padding: 10px;
+}
