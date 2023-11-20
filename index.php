@@ -1,3 +1,13 @@
+<?php
+    $appid = "APP_ID";
+    $tennantid = "TENNANT_ID";
+    $secret = "SECRET";
+    $login_url ="https://login.microsoftonline.com/".$tennantid."/oauth2/v2.0/authorize";
+
+    session_start ();
+    $_SESSION['state']=session_id();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
