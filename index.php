@@ -35,17 +35,27 @@
         </spam>
     </div>
     <br/>
+    <?php
+        if (!array_key_exists("get_cred", $_POST)) { 
+            unset($_POST["log-out"]);
+    ?>
     <div id="log_in" class="log_in">
         <h3>
             Get Credentials
         </h3>
-        <button onclick="connectToMicrosoft()" class="login_button">
-            Here
-        </button>
+        <form method="post">
+            <input type="submit" name="get_cred" value="Here" class="login_button" />
+        </form>
     </div>
-    <div id="logged_in" class="log_in" style="display: none;">
+    <?php 
+        } else { 
+            unset($_POST["get_cred"]);
+    ?>
+    <div id="logged_in" class="log_in">
         <h3 id="name">RĂZVAN CHIȚEA</h3>
-        <button onclick="disconnectFromMicrosoft()" class="credencials_button">Log out</button>
+        <form method="post">
+            <input type="submit" name="log-out" value="Log out" class="credencials_button" />
+        </form>
         <h3>Your credentials are:</h3>
         <div class="data_div">
             <p>username:&nbsp;</p>
@@ -59,6 +69,7 @@
         </div>
         <button onclick="copyToClickboard('password')" class="credencials_button">copy</button>
     </div>
+    <?php } ?>
     <br/>
     <br/>
     <br/>
